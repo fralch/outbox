@@ -492,16 +492,13 @@
          </div>
       </div>
    </footer>
-<<<<<<< Updated upstream
-   
-   
-=======
+
    <a href="https://wa.me/+17863705995?text=Hola,%20me%20gustaría%20obtener%20más%20información%20sobre%20sus%20servicios"
       target="_blank" class="whatsapp-button">
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/600px-WhatsApp_icon.png"
          alt="WhatsApp">
    </a>
->>>>>>> Stashed changes
+
    <!-- end footer -->
    <!-- Javascript files-->
    <script src="js/jquery.min.js"></script>
@@ -659,6 +656,7 @@
          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
          cursor: pointer;
          transition: background-color 0.3s ease;
+         animation: bounce 2s infinite;
       }
 
       .whatsapp-button:hover {
@@ -668,6 +666,26 @@
       .whatsapp-button img {
          width: 30px;
          height: 30px;
+      }
+
+      /* Animación de rebote */
+      @keyframes bounce {
+
+         0%,
+         20%,
+         50%,
+         80%,
+         100% {
+            transform: translateY(0);
+         }
+
+         40% {
+            transform: translateY(-30px);
+         }
+
+         60% {
+            transform: translateY(-15px);
+         }
       }
    </style>
 </body>
